@@ -1,0 +1,35 @@
+
+.contenedor {
+  max-width: 650px;
+  margin: 50px auto;
+  padding: 30px;
+  font-family: Arial, sans-serif;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px #cccccc;
+}
+
+h1 {
+  color: #163d70;
+  text-align: center;
+}
+
+h2 {
+  color: #163d70;
+}
+
+.abierta {
+  color: green;
+}
+
+.cerrada {
+  color: red;
+}
+
+li {
+  margin: 10px 0;
+}
+
+p {
+  font-size: 17px;
+}

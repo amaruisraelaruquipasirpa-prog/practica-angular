@@ -1,0 +1,40 @@
+
+<div class="contenedor">
+
+  <h1>{{ nombreTienda }}</h1>
+
+  <p><strong>Encargado:</strong> {{ encargado }}</p>
+
+  <p><strong>Sucursal:</strong> {{ numeroSucursal }}</p>
+
+  @if (tiendaAbierta) {
+    <h2 class="abierta">Tienda abierta</h2>
+  } @else {
+    <h2 class="cerrada">Tienda cerrada</h2>
+  }
+
+  <hr>
+
+  <h2>Nuestras categorías</h2>
+
+  <ul>
+    @for (categoria of categorias; track categoria) {
+      <li>{{ categoria }}</li>
+    }
+  </ul>
+
+  <hr>
+
+  <h2>Producto destacado</h2>
+
+  <h3>{{ producto.nombre }}</h3>
+
+  <p>Precio: Bs {{ producto.precio }}</p>
+
+  @if (producto.disponible) {
+    <p class="abierta">Producto disponible</p>
+  } @else {
+    <p class="cerrada">Producto agotado</p>
+  }
+
+</div>
